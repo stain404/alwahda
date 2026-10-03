@@ -13,9 +13,10 @@ export const company = {
 };
 
 export const navLinks = [
-  { href: "#products", label: "Products" },
-  { href: "#brands", label: "Brands" },
-  { href: "#about", label: "About" },
+  { href: "/", label: "Home" },
+  { href: "/products", label: "Products" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export const heroTiles = [
@@ -25,13 +26,13 @@ export const heroTiles = [
   { src: "/images/site/cat-2-1.jpg", alt: "Burger with chicken nuggets", label: "Burgers & nuggets" },
 ];
 
-export const categories = [
-  { title: "French fries", text: "Thin, straight-cut, crinkle and wedge fries, plus potato bites, from Maestro." },
-  { title: "Fruit pulp & slices", text: "Frozen mango, guava, strawberry, passion fruit, tender coconut and more, from Fruitco." },
+export const categories: { title: string; text: string; brand?: string }[] = [
+  { title: "French fries", text: "Thin, straight-cut, crinkle and wedge fries, plus potato bites, from Maestro.", brand: "maestro" },
+  { title: "Fruit pulp & slices", text: "Frozen mango, guava, strawberry, passion fruit, tender coconut and more, from Fruitco.", brand: "fruitco" },
   { title: "Frozen meat & poultry", text: "Beef, lamb and chicken cuts, portioned and ready for the kitchen." },
-  { title: "Burger products", text: "Beef and chicken patties, chicken burgers and nuggets." },
-  { title: "Frozen wraps", text: "Wheat flour tortillas from American Classic, for shawarma, wraps and rolls." },
-  { title: "Mayonnaise & ketchup", text: "Heavy-duty mayonnaise and ketchup in catering sizes, from The Recipe." },
+  { title: "Burger products", text: "Beef and chicken patties, chicken burgers and nuggets.", brand: "golden-fresh" },
+  { title: "Frozen wraps", text: "Wheat flour tortillas from American Classic, for shawarma, wraps and rolls.", brand: "american-classic" },
+  { title: "Mayonnaise & ketchup", text: "Heavy-duty mayonnaise and ketchup in catering sizes, from The Recipe.", brand: "recipe" },
 ];
 
 export type Brand = {
@@ -134,3 +135,7 @@ export const testimonials = [
     name: "Nasser Ahmed",
   },
 ];
+
+export function getBrand(id: string) {
+  return brands.find((b) => b.id === id);
+}

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { categories } from "@/lib/content";
 import SectionHead from "./SectionHead";
 
@@ -21,6 +22,11 @@ export default function Categories() {
             >
               <h3 className="mb-2 text-[1.2rem] font-bold [font-stretch:110%]">{c.title}</h3>
               <p className="text-muted">{c.text}</p>
+              {c.brand && (
+                <Link href={`/products/${c.brand}`} className="mt-3 inline-block font-semibold text-plum hover:underline">
+                  See products
+                </Link>
+              )}
             </li>
           ))}
         </ul>

@@ -8,9 +8,9 @@ export default function Contact() {
     <section id="contact" aria-labelledby="contact-title" className="bg-plum text-white">
       <div className="wrap grid gap-[clamp(32px,6vw,80px)] py-[clamp(64px,9vw,112px)] md:grid-cols-2">
         <div>
-          <h2 id="contact-title" className="section-title text-white">
+          <h1 id="contact-title" className="section-title text-white">
             Talk to us about an order
-          </h2>
+          </h1>
           <p className="mt-4 max-w-[44ch] text-[#f1e3ea]">
             Tell us what your kitchen or shop needs and we’ll send prices and delivery times.
           </p>
@@ -52,7 +52,7 @@ export default function Contact() {
         src={`https://maps.google.com/maps?q=${encodeURIComponent(company.mapQuery)}&z=15&output=embed`}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        className="block h-[340px] w-full border-0"
+        className="block h-[340px] w-full border-0 bg-frost"
       />
     </section>
   );

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { company, heroTiles } from "@/lib/content";
 
 export default function Hero() {
@@ -16,9 +17,9 @@ export default function Hero() {
             burger patties, wraps and sauces from trusted international brands.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="#contact" className="btn bg-gold text-plum-deep hover:bg-gold-dark">
+            <Link href="/contact" className="btn bg-gold text-plum-deep hover:bg-gold-dark">
               Request a price list
-            </a>
+            </Link>
             <a href={mainPhone.href} className="btn border-plum text-plum hover:bg-plum hover:text-white">
               Call {mainPhone.label}
             </a>
