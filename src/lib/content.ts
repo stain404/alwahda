@@ -26,13 +26,13 @@ export const heroTiles = [
   { src: "/images/site/cat-2-1.jpg", alt: "Burger with chicken nuggets", label: "Burgers & nuggets" },
 ];
 
-export const categories: { title: string; text: string; brand?: string }[] = [
-  { title: "French fries", text: "Thin, straight-cut, crinkle and wedge fries, plus potato bites, from Maestro.", brand: "maestro" },
-  { title: "Fruit pulp & slices", text: "Frozen mango, guava, strawberry, passion fruit, tender coconut and more, from Fruitco.", brand: "fruitco" },
-  { title: "Frozen meat & poultry", text: "Beef, lamb and chicken cuts, portioned and ready for the kitchen." },
-  { title: "Burger products", text: "Beef and chicken patties, chicken burgers and nuggets.", brand: "golden-fresh" },
-  { title: "Frozen wraps", text: "Wheat flour tortillas from American Classic, for shawarma, wraps and rolls.", brand: "american-classic" },
-  { title: "Mayonnaise & ketchup", text: "Heavy-duty mayonnaise and ketchup in catering sizes, from The Recipe.", brand: "recipe" },
+export const categories: { title: string; text: string; image: string; alt: string; fill?: boolean; brand?: string }[] = [
+  { title: "French fries", text: "Thin, straight-cut, crinkle and wedge fries, plus potato bites, from Maestro.", image: "/images/site/cat-1-1.jpg", alt: "French fries, crinkle fries, potato wedges and potato bites", brand: "maestro" },
+  { title: "Fruit pulp & slices", text: "Frozen mango, guava, strawberry, passion fruit, tender coconut and more, from Fruitco.", image: "/images/site/cat-4-2.jpg", alt: "Mango, custard apple and sapota", brand: "fruitco" },
+  { title: "Frozen meat & poultry", text: "Beef, lamb and chicken cuts, portioned and ready for the kitchen.", image: "/images/site/cat-3-1.jpg", alt: "Cuts of beef, lamb and chicken" },
+  { title: "Burger products", text: "Beef and chicken patties, chicken burgers and nuggets.", image: "/images/site/cat-2-1.jpg", alt: "Burger with chicken nuggets", brand: "golden-fresh" },
+  { title: "Frozen wraps", text: "Wheat flour tortillas from American Classic, for shawarma, wraps and rolls.", image: "/images/american-classic/1.jpg", alt: "Pack of wheat flour tortilla wraps", fill: true, brand: "american-classic" },
+  { title: "Mayonnaise & ketchup", text: "Heavy-duty mayonnaise and ketchup in catering sizes, from The Recipe.", image: "/images/recipe/1.jpg", alt: "Tub of heavy-duty mayonnaise", fill: true, brand: "recipe" },
 ];
 
 export type Brand = {
